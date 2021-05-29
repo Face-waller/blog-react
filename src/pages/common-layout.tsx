@@ -1,4 +1,3 @@
-/*
 import React, {useState} from "react";
 import Header from "src/components/layout/header";
 function CommonLayout(props:any){
@@ -7,4 +6,4 @@ function CommonLayout(props:any){
     )
 }
 
-export default CommonLayout*/
+export default CommonLayout
