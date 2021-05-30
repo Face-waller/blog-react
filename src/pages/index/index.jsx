@@ -13,10 +13,6 @@ function Index(props) {
     // 更多
     const moreBlog = ()=> {
     }
-    const contentStyle = {
-
-    };
-
     return (
         <>
             <div className="col-sm-9 col-md-9">

@@ -335,9 +335,7 @@ module.exports = function (webpackEnv) {
         }),
         ...(modules.webpackAliases || {}),
         // 路径别名
-        '@': path.join(__dirname, "../src"),
-        '@components': path.join(__dirname, "../src/components"),
-        '@pages': path.join(__dirname, "../src/pages"),
+        "src": path.join(__dirname, "../src"),
         '@static': path.join(__dirname, "../src/static"),
         '@store': path.join(__dirname, "../src/store"),
         '@utils': path.join(__dirname, "../src/utils"),
