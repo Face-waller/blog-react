@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.scss';
 import CommonLayout from "./pages/common-layout";
+import {Route} from "react-router";
 
-function App() {
+function App(props) {
     return (
         <div className="App">
-            <CommonLayout/>
+            <Route path={`/:componentPath?`} component={CommonLayout}/>
+            {/*<CommonLayout/>*/}
         </div>
     );
 }

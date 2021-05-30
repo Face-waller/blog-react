@@ -6,13 +6,16 @@ import App from './App';
 // 全局less样式
 import 'src/static/css/common.less'
 
+import {BrowserRouter} from "react-router-dom";
+import {Route} from "react-router";
+
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <BrowserRouter>
+        <Route path={`/`} component={App} />
+    </BrowserRouter>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

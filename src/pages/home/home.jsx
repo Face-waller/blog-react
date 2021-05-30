@@ -1,14 +1,15 @@
 import React from "react"
-import Sidebar from "../../components/layout/sidebar";
-import ArticleIndexItem from "../../components/article-index-item";
+import Sidebar from "src/components/layout/sidebar";
+import ArticleIndexItem from "src/components/article-index-item";
 import { Carousel } from 'antd';
 
-import "./index.scss"
+import "src/pages/home/home.scss"
 
-import banner1 from '../../static/img/temp/banner1.jpg'
-import banner8 from '../../static/img/temp/banner8.png'
+import banner1 from 'src/static/img/temp/banner1.jpg'
+import banner8 from 'src/static/img/temp/banner8.png'
+import {withRouter} from "react-router";
 
-function Index(props) {
+function Home(props) {
     // 更多
     const moreBlog = ()=> {
     }
@@ -37,12 +38,12 @@ function Index(props) {
                     <ul className="index_arc">
                         {
                             new Array(6).fill(0).map((article,index)=>
-                                <ArticleIndexItem hasImg={index % 2 === 0}/>)
+                                <ArticleIndexItem key={index} hasImg={index % 2 === 0}/>)
                         }
                     </ul>
                     <div className="text-c mb-20" id="moreBlog">
-                        <a className="btn  radius btn-block " href="javascript:;" onClick={moreBlog}>点击加载更多</a>
-                        <a className="btn  radius btn-block hidden" href="javascript:;">加载中……</a>
+                        <a className="btn  radius btn-block " onClick={moreBlog}>点击加载更多</a>
+                        <a className="btn  radius btn-block hidden">加载中……</a>
                     </div>
                 </div>
             </div>
@@ -51,4 +52,4 @@ function Index(props) {
     )
 }
 
-export default Index
+export default withRouter(Home)
