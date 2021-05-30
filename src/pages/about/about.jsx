@@ -1,6 +1,8 @@
 import React from "react";
 import {withRouter} from "react-router";
 
+import "src/pages/about/about.scss"
+
 function About(props) {
     return (
         <div className="container-fluid">
@@ -23,7 +25,6 @@ function About(props) {
                     <p><i className="Hui-iconfont">&#xe63b;</i>email : wfyv@qq.com</p>
                 </ul>
             </div>
-
         </div>
     )
 }

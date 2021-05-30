@@ -1,13 +1,34 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import {withRouter} from "react-router";
+import 'src/pages/board/board.scss'
+import ReactWEditor from 'wangeditor-for-react';
 
 function Board(props) {
+    const editorConfig = {
+        menus:  ['insertcode', 'quote', 'bold', '|', 'img', 'emotion', '|', 'undo', 'fullscreen'],
+        emotions: [
+            {
+                title: 'emoji',  // tab 的标题
+                type: 'emoji', // 'emoji' / 'image'
+                // emoji 表情，content 是一个数组即可
+                content: '😀 😃 😄 😁 😆 😅 😂 😊 😇 🙂 🙃 😉 😓 😪 😴 🙄 🤔 😬 🤐'.split(/\s/),
+            }
+        ]
+    }
+
     return (
-        <div className="col-xs-12 col-md-10 col-md-offset-1 mt-20">
+        <div className="col-xs-12 col-md-10 col-md-offset-1">
             {/*用于评论*/}
             <div className="mt-20" id="ct">
                 <div id="err" className="Huialert Huialert-danger hidden radius">成功状态提示</div>
-                <textarea id="textarea1" name="comment" style={{height: 200}} placeholder="看完不留一发？"> </textarea>
+                <ReactWEditor
+                    defaultValue='请输入...'
+                    config={editorConfig}
+                    onChange={(html) => {
+                        console.log('onChange html:', html)
+                    }}
+                />
+                {/*<textarea ref={theEditor} id="comment-textarea" name="comment" style={{height: 200}} placeholder="看完不留一发？"> </textarea>*/}
                 <div className="text-r mt-10">
                     <button className="btn btn-primary radius"> 发表评论</button>
                 </div>

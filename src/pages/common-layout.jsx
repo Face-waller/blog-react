@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "src/components/layout/header";
 import Footer from "src/components/layout/footer";
+import Breadcrumb from "src/components/layout/breadcrumb";
 import Home from "src/pages/home/home";
 import {Redirect, Route, Switch} from "react-router";
 import About from "src/pages/about/about";
@@ -13,6 +14,7 @@ function CommonLayout(props){
     return (
         <>
             <Header/>
+            <Breadcrumb/>
             <section className="container" style={{marginTop: 20}}>
                 <Switch>
                     <Route path={`/home`} component={Home} />

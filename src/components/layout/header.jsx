@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 import logo from "src/static/img/logo.png"
 import qqIcon from "src/static/img/qq.jpg"
@@ -16,7 +16,30 @@ function Header(props) {
         setNavbarNavToggle(toggleValue)
     }
 
-    console.log(props.match.params.componentPath)
+    useEffect(()=>{
+        switch (props.match.params.componentPath) {
+            case 'home':{
+                setCurrentMenuActive('首页')
+                break;
+            }
+            case 'about':{
+                setCurrentMenuActive('关于我')
+                break;
+            }
+            case 'mood':{
+                setCurrentMenuActive('碎言碎语')
+                break;
+            }
+            case 'article-list':{
+                setCurrentMenuActive('学无止尽')
+                break;
+            }
+            case 'board':{
+                setCurrentMenuActive('留言板')
+                break;
+            }
+        }
+    },[props.match.params])
 
     const menuClick = (mark) => {
         setCurrentMenuActive(mark)
