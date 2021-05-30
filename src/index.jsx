@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+
+// 全局less样式
+import 'src/static/css/common.less'
+
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

@@ -22,7 +22,7 @@ function ArticleIndexItem(props) {
                         </div>
                     </li> :
                     <li className="index_arc_item">
-                        <a href="#" className="pic">
+                        <a className="pic">
                             <img className="lazyload" src={art} alt=""/>
                         </a>
                         <h4 className="title"><a href="article_detail.html">个人博客应该选择什么样的域名和域名后缀</a></h4>

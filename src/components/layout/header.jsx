@@ -24,7 +24,6 @@ function Header(props) {
                     <a
                         aria-hidden="false"
                         className="nav-toggle Hui-iconfont visible-xs"
-                        href="javascript:void(0);"
                         onClick={showSide}
                     >
                         &#xe667;

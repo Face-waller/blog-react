@@ -8,7 +8,6 @@ import "./index.scss"
 import banner1 from '../../static/img/temp/banner1.jpg'
 import banner8 from '../../static/img/temp/banner8.png'
 
-
 function Index(props) {
     // 更多
     const moreBlog = ()=> {

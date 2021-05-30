@@ -12,9 +12,9 @@ function Sidebar(props) {
                     <div className="slideTxtBox">
                         <div className="bd">
                             <ul>
-                                <li><a href="javascript:void(0);">Lao博客测试版上线，欢迎访问</a></li>
-                                <li><a href="javascript:void(0);">内容如有侵犯，请立即联系管理员删除</a></li>
-                                <li><a href="javascript:void(0);">本站内容仅供学习和参阅，不做任何商业用途</a></li>
+                                <li>Lao博客测试版上线，欢迎访问</li>
+                                <li>内容如有侵犯，请立即联系管理员删除</li>
+                                <li>本站内容仅供学习和参阅，不做任何商业用途</li>
                             </ul>
                         </div>
                     </div>
@@ -43,23 +43,23 @@ function Sidebar(props) {
                 <div className="tab-category-item">
                     <ul className="index_recd">
                         <li>
-                            <a href="#">阻止a标签href默认跳转事件</a>
+                            <a>阻止a标签href默认跳转事件</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe622;</i> 276 </p>
                         </li>
                         <li>
-                            <a href="#">PHP面试题汇总</a>
+                            <a>PHP面试题汇总</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe622;</i> 276 </p>
                         </li>
                         <li>
-                            <a href="#">阻止a标签href默认跳转事件</a>
+                            <a>阻止a标签href默认跳转事件</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe622;</i> 276 </p>
                         </li>
                         <li>
-                            <a href="#">阻止a标签href默认跳转事件</a>
+                            <a>阻止a标签href默认跳转事件</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe622;</i> 276 </p>
                         </li>
                         <li>
-                            <a href="#">PHP面试题汇总</a>
+                            <a>PHP面试题汇总</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe622;</i> 276 </p>
                         </li>
                     </ul>
@@ -73,31 +73,31 @@ function Sidebar(props) {
                 <div className="tab-category-item">
                     <ul className="index_recd clickTop">
                         <li>
-                            <a href="#">AJAX的刷新和前进后退问题解决</a>
+                            <a>AJAX的刷新和前进后退问题解决</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe6c1;</i> 276° </p>
                         </li>
                         <li>
-                            <a href="#">AJAX的刷新和前进后退问题解决</a>
+                            <a>AJAX的刷新和前进后退问题解决</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe6c1;</i> 276° </p>
                         </li>
                         <li>
-                            <a href="#">AJAX的刷新和前进后退问题解决</a>
+                            <a>AJAX的刷新和前进后退问题解决</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe6c1;</i> 276° </p>
                         </li>
                         <li>
-                            <a href="#">AJAX的刷新和前进后退问题解决</a>
+                            <a>AJAX的刷新和前进后退问题解决</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe6c1;</i> 276° </p>
                         </li>
                         <li>
-                            <a href="#">AJAX的刷新和前进后退问题解决</a>
+                            <a>AJAX的刷新和前进后退问题解决</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe6c1;</i> 276° </p>
                         </li>
                         <li>
-                            <a href="#">AJAX的刷新和前进后退问题解决</a>
+                            <a>AJAX的刷新和前进后退问题解决</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe6c1;</i> 276° </p>
                         </li>
                         <li>
-                            <a href="#">AJAX的刷新和前进后退问题解决</a>
+                            <a >AJAX的刷新和前进后退问题解决</a>
                             <p className="hits"><i className="Hui-iconfont" title="点击量">&#xe6c1;</i> 276° </p>
                         </li>
                     </ul>
@@ -139,11 +139,11 @@ function Sidebar(props) {
                     <a href=""><strong>隔壁邻居</strong></a>
                 </div>
                 <div className="tab-category-item">
-                    <span><i className="Hui-iconfont">&#xe6f1;</i><a href="#" className="btn-link">百度</a></span>
-                    <span><i className="Hui-iconfont">&#xe6f1;</i><a href="#" className="btn-link">淘宝</a></span>
-                    <span><i className="Hui-iconfont">&#xe6f1;</i><a href="#" className="btn-link">腾讯</a></span>
-                    <span><i className="Hui-iconfont">&#xe6f1;</i><a href="#" className="btn-link">慕课网</a></span>
-                    <span><i className="Hui-iconfont">&#xe6f1;</i><a href="#" className="btn-link">h-ui</a></span>
+                    <span><i className="Hui-iconfont">&#xe6f1;</i><a  className="btn-link">百度</a></span>
+                    <span><i className="Hui-iconfont">&#xe6f1;</i><a  className="btn-link">淘宝</a></span>
+                    <span><i className="Hui-iconfont">&#xe6f1;</i><a  className="btn-link">腾讯</a></span>
+                    <span><i className="Hui-iconfont">&#xe6f1;</i><a  className="btn-link">慕课网</a></span>
+                    <span><i className="Hui-iconfont">&#xe6f1;</i><a  className="btn-link">h-ui</a></span>
                 </div>
             </div>
             {/*最近访客*/}
@@ -172,12 +172,12 @@ function Sidebar(props) {
                     <a href=""><strong>站点分享</strong></a>
                 </div>
                 <div className="panel-body">
-                    <div className="bdsharebuttonbox Hui-share"><a href="#" className="bds_weixin Hui-iconfont"
+                    <div className="bdsharebuttonbox Hui-share"><a  className="bds_weixin Hui-iconfont"
                                                                    data-cmd="weixin" title="分享到微信">&#xe694;</a><a
-                        href="#" className="bds_qzone Hui-iconfont" data-cmd="qzone" title="分享到QQ空间">&#xe6c8;</a> <a
-                        href="#" className="bds_sqq Hui-iconfont" data-cmd="sqq" title="分享到QQ好友">&#xe67b;</a> <a
-                        href="#" className="bds_tsina Hui-iconfont" data-cmd="tsina" title="分享到新浪微博">&#xe6da;</a> <a
-                        href="#" className="bds_tqq Hui-iconfont" data-cmd="tqq" title="分享到腾讯微博">&#xe6d9;</a></div>
+                         className="bds_qzone Hui-iconfont" data-cmd="qzone" title="分享到QQ空间">&#xe6c8;</a> <a
+                         className="bds_sqq Hui-iconfont" data-cmd="sqq" title="分享到QQ好友">&#xe67b;</a> <a
+                         className="bds_tsina Hui-iconfont" data-cmd="tsina" title="分享到新浪微博">&#xe6da;</a> <a
+                         className="bds_tqq Hui-iconfont" data-cmd="tqq" title="分享到腾讯微博">&#xe6d9;</a></div>
                 </div>
             </div>
         </div>
