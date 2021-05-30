@@ -325,7 +325,6 @@ module.exports = function (webpackEnv) {
         .map(ext => `.${ext}`)
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
-        'src': path.join(__dirname, '../', 'src'),
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
@@ -335,6 +334,13 @@ module.exports = function (webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
+        // 路径别名
+        '@': path.join(__dirname, "../src"),
+        '@components': path.join(__dirname, "../src/components"),
+        '@pages': path.join(__dirname, "../src/pages"),
+        '@static': path.join(__dirname, "../src/static"),
+        '@store': path.join(__dirname, "../src/store"),
+        '@utils': path.join(__dirname, "../src/utils"),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -511,7 +517,20 @@ module.exports = function (webpackEnv) {
                     : isEnvDevelopment,
                 },
                 'sass-loader'
-              ),
+              ).concat([
+                {
+                  loader: "sass-resources-loader",
+                  options: {
+                    resources: path.join(__dirname, "../src/static/css/common.scss") // scss公共变量所在文件的路径
+                  }
+                },
+                {
+                  loader: "sass-resources-loader",
+                  options: {
+                    resources: path.join(__dirname, "../src/static/css/reset.css") // scss公共变量所在文件的路径
+                  }
+                }
+              ]),
               // Don't consider CSS imports dead code even if the
               // containing package claims to have no side effects.
               // Remove this when webpack adds a warning or an error for this.
@@ -533,7 +552,12 @@ module.exports = function (webpackEnv) {
                   },
                 },
                 'sass-loader'
-              ),
+              ).concat([{
+                loader: "sass-resources-loader",
+                options: {
+                  resources: path.join(__dirname, "../src/static/css/common.scss") // scss公共变量所在文件的路径
+                }
+              }]),
             },
             // "file" loader makes sure those assets get served by WebpackDevServer.
             // When you `import` an asset, you get its (virtual) filename.
@@ -700,7 +724,7 @@ module.exports = function (webpackEnv) {
           reportFiles: [
             // This one is specifically to match during CI tests,
             // as micromatch doesn't match
-            // '../cra-template-typescript/template/src/App.tsx'
+            // '../cra-template-typescript/template/src/App.jsx'
             // otherwise.
             '../**/src/**/*.{ts,tsx}',
             '**/src/**/*.{ts,tsx}',
