@@ -27,11 +27,11 @@ function Sidebar(props) {
                 </div>
                 <div className="tab-category-item">
                     <ul className="index_recd">
-                        <li className="index_recd_item"><i className="Hui-iconfont">&#xe653;</i>姓名：王风宇</li>
-                        <li className="index_recd_item"><i className="Hui-iconfont">&#xe70d;</i>职业：JavaWeb开发</li>
+                        <li className="index_recd_item"><i className="Hui-iconfont">&#xe653;</i>姓名：鲁林</li>
+                        <li className="index_recd_item"><i className="Hui-iconfont">&#xe70d;</i>职业：web开发</li>
                         <li className="index_recd_item"><i className="Hui-iconfont">&#xe63b;</i>邮箱：<a
-                            href="mailto:wfyv@qq.com">wfyv@qq.com</a></li>
-                        <li className="index_recd_item"><i className="Hui-iconfont">&#xe671;</i>定位：安徽 &middot; 合肥</li>
+                            href="mailto:2445530702@qq.com">2445530702@qq.com</a></li>
+                        <li className="index_recd_item"><i className="Hui-iconfont">&#xe671;</i>定位：河南 &middot; 信阳</li>
                     </ul>
                 </div>
             </div>

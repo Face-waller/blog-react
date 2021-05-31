@@ -24,7 +24,7 @@ function Board(props) {
             <div id="ct">
                 <div id="err" className="Huialert Huialert-danger hidden radius">成功状态提示</div>
                 <ReactWEditor
-                    defaultValue='请输入...'
+                    placeholder='想说点什么...'
                     config={editorConfig}
                     onChange={(html) => {
                         console.log('onChange html:', html)
