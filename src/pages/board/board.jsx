@@ -5,7 +5,9 @@ import ReactWEditor from 'wangeditor-for-react';
 
 function Board(props) {
     const editorConfig = {
-        menus:  ['insertcode', 'quote', 'bold', '|', 'img', 'emotion', '|', 'undo', 'fullscreen'],
+        height: 184,
+        colors: ['#429798'],
+        menus:  ['code', 'quote', 'bold', 'image', 'emoticon', 'undo'],
         emotions: [
             {
                 title: 'emoji',  // tab 的标题
@@ -19,7 +21,7 @@ function Board(props) {
     return (
         <div className="col-xs-12 col-md-10 col-md-offset-1">
             {/*用于评论*/}
-            <div className="mt-20" id="ct">
+            <div id="ct">
                 <div id="err" className="Huialert Huialert-danger hidden radius">成功状态提示</div>
                 <ReactWEditor
                     defaultValue='请输入...'
@@ -28,18 +30,18 @@ function Board(props) {
                         console.log('onChange html:', html)
                     }}
                 />
-                {/*<textarea ref={theEditor} id="comment-textarea" name="comment" style={{height: 200}} placeholder="看完不留一发？"> </textarea>*/}
                 <div className="text-r mt-10">
                     <button className="btn btn-primary radius"> 发表评论</button>
                 </div>
             </div>
-
-            <div className="line"></div>
-
+            <div className="line"/>
             <ul className="commentList mt-50">
-
-                <li className="item cl"><a href="#"><i className="avatar size-L radius"><img alt=""
-                                                                                             src="http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/100"/></i></a>
+                <li className="item cl">
+                    <a href="#">
+                        <i className="avatar size-L radius">
+                            <img alt="" src="http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/100"/>
+                        </i>
+                    </a>
                     <div className="comment-main">
                         <header className="comment-header">
                             <div className="comment-meta"><a className="comment-author" href="#">老王</a>

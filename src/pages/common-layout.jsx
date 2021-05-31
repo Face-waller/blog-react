@@ -1,4 +1,5 @@
 import React from "react";
+import 'src/pages/common-layout.scss'
 import Header from "src/components/layout/header";
 import Footer from "src/components/layout/footer";
 import Breadcrumb from "src/components/layout/breadcrumb";
@@ -9,6 +10,8 @@ import Mood from "src/pages/mood/mood";
 import ArticleList from "src/pages/article/article-list"
 import ArticleDetail from "src/pages/article/article-detail"
 import Board from "src/pages/board/board";
+import {BackTop} from "antd";
+import {ArrowUpOutlined} from '@ant-design/icons';
 
 function CommonLayout(props){
     return (
@@ -27,6 +30,11 @@ function CommonLayout(props){
                 </Switch>
             </section>
             <Footer/>
+            <BackTop>
+                <div className="to-top">
+                    <ArrowUpOutlined />
+                </div>
+            </BackTop>
         </>
     )
 }
