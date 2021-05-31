@@ -27,11 +27,11 @@ function Header(props) {
                 break;
             }
             case 'mood':{
-                setCurrentMenuActive('碎言碎语')
+                setCurrentMenuActive('动态')
                 break;
             }
             case 'article-list':{
-                setCurrentMenuActive('学无止尽')
+                setCurrentMenuActive('文章')
                 break;
             }
             case 'board':{
@@ -52,11 +52,11 @@ function Header(props) {
                 props.history.push('/about')
                 break;
             }
-            case '碎言碎语':{
+            case '动态':{
                 props.history.push('/mood')
                 break;
             }
-            case '学无止尽':{
+            case '文章':{
                 props.history.push('/article-list')
                 break;
             }
@@ -87,17 +87,17 @@ function Header(props) {
                             <li className={(currentMenuActive === '首页' && 'active').toString()}>
                                 <a onClick={()=> menuClick('首页')} data-hover="首页">首页</a>
                             </li>
-                            <li className={(currentMenuActive === '关于我' && 'active').toString()}>
-                                <a onClick={()=> menuClick('关于我')} data-hover="关于我">关于我</a>
+                            <li className={(currentMenuActive === '动态' && 'active').toString()}>
+                                <a onClick={()=> menuClick('动态')} data-hover="动态">动态</a>
                             </li>
-                            <li className={(currentMenuActive === '碎言碎语' && 'active').toString()}>
-                                <a onClick={()=> menuClick('碎言碎语')} data-hover="碎言碎语">碎言碎语</a>
-                            </li>
-                            <li className={(currentMenuActive === '学无止尽' && 'active').toString()}>
-                                <a onClick={()=> menuClick('学无止尽')} data-hover="学无止尽">学无止尽</a>
+                            <li className={(currentMenuActive === '文章' && 'active').toString()}>
+                                <a onClick={()=> menuClick('文章')} data-hover="文章">文章</a>
                             </li>
                             <li className={(currentMenuActive === '留言板' && 'active').toString()}>
                                 <a onClick={()=> menuClick('留言板')} data-hover="留言板">留言板</a>
+                            </li>
+                            <li className={(currentMenuActive === '关于我' && 'active').toString()}>
+                                <a onClick={()=> menuClick('关于我')} data-hover="关于我">关于我</a>
                             </li>
                         </ul>
                     </nav>

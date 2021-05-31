@@ -15,8 +15,7 @@ function ArticleList(props) {
                     }
                 </ul>
                 <div className="text-c mb-20" id="moreBlog">
-                    <a className="btn  radius btn-block "
-                       onClick="moreBlog('${blogType.id}','${tag.name}');">点击加载更多</a>
+                    <a className="btn  radius btn-block">点击加载更多</a>
                     <a className="btn  radius btn-block hidden">加载中……</a>
                 </div>
             </div>

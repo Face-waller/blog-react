@@ -25,6 +25,7 @@ function Board(props) {
                 <div id="err" className="Huialert Huialert-danger hidden radius">成功状态提示</div>
                 <ReactWEditor
                     placeholder='想说点什么...'
+                    defaultValue=''
                     config={editorConfig}
                     onChange={(html) => {
                         console.log('onChange html:', html)
@@ -54,8 +55,12 @@ function Board(props) {
                             你是猴子派来的救兵吗？
 
                             <ul className="commentList">
-                                <li className="item cl"><a href="#"><i className="avatar size-L radius"><img alt=""
-                                                                                                             src="http://qzapp.qlogo.cn/qzapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/100"/></i></a>
+                                <li className="item cl">
+                                    <a href="#">
+                                        <i className="avatar size-L radius">
+                                            <img alt="" src="http://qzapp.qlogo.cn/qzapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/100"/>
+                                        </i>
+                                    </a>
                                     <div className="comment-main">
                                         <header className="comment-header">
                                             <div className="comment-meta"><a className="comment-author" href="#">老王</a>
@@ -110,7 +115,6 @@ function Board(props) {
                         </div>
                     </div>
                 </li>
-
             </ul>
             {/*用于回复*/}
             <div className="comment hidden mt-20">
