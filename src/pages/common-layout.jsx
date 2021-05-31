@@ -23,7 +23,7 @@ function CommonLayout(props){
                     <Route path={`/article-list`} component={ArticleList} />
                     <Route path={`/article-detail`} component={ArticleDetail} />
                     <Route path={`/board`} component={Board} />
-                    <Redirect to={`/index`} />
+                    <Redirect to={`/home`} />
                 </Switch>
             </section>
             <Footer/>
