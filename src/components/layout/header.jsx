@@ -71,10 +71,10 @@ function Header(props) {
         <header className="navbar-wrapper">
             <div className="navbar navbar-fixed-top">
                 <div className="container cl">
-                    <a className="navbar-logo hidden-xs" href="index.html">
-                        <img className="logo" src={logo} alt="Lao王博客"/>
+                    <a className="navbar-logo hidden-xs">
+                        <img className="logo" src={logo} alt="番茄博客"/>
                     </a>
-                    <a className="logo navbar-logo-m visible-xs" href="index.html">Lao王博客</a>
+                    <a className="logo navbar-logo-m visible-xs">番茄博客</a>
                     <a
                         aria-hidden="false"
                         className="nav-toggle Hui-iconfont visible-xs"
